@@ -10,6 +10,9 @@ Definition of Smali from the official page
 Clone the repo: `https://github.com/pantrif/HexToSmaliConverter.git`.
 Put the files in a server.
 
+### Demo
+* http://pantrif.github.io/HexToSmaliConverter/
+
 ## Contributing
 Please make a Pull request if you want to make a contribution.
 
