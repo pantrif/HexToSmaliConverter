@@ -1,0 +1,50 @@
+<h2>{{ appSettings.title }}</h2>
+
+<div class="col-sm-8">
+  <div class="panel panel-default">
+  <div class="panel-heading">Hex (ARGB) value {{colors.hex}}</div>
+  <div class="panel-body">
+  <div class="input-group" ng-form >
+    <span class="input-group-addon"></span>
+    <input type="text" class="form-control" name="hex" ng-maxlength="8" ng-model="colors.hex" ng-blur="methods.onHexBlur()">
+  </div>
+   <div class="col-sm-12">
+    <span ng-show="validation.wrongHex">You have entered invalid Hex value. It has to be in argb format. Learn more <a href="http://developer.android.com/guide/topics/resources/more-resources.html#Color" target="_blank">here</a>.</span>
+  </div>
+  </div>
+
+  <div class="panel-heading">Smali value {{colors.smali}}</div>
+  <div class="panel-body">
+  <div class="input-group" ng-form>
+    <span class="input-group-addon"></span>
+    <input type="text" class="form-control" ng-maxlength="11" ng-model="colors.smali" ng-blur="methods.onSmaliBlur()">
+  </div>
+  <div class="col-sm-12">
+  	<span ng-show="validation.wrongSmali">You have entered invalid Smali value.</span>
+  </div>
+  </div>
+
+
+  <div class="panel-heading">Decimal value {{colors.dec}}</div>
+  <div class="panel-body">
+  <div class="input-group" ng-form >
+    <span class="input-group-addon"></span>
+    <input type="text" class="form-control" name="hex" ng-maxlength="11" ng-model="colors.dec" ng-blur="methods.onXMLBlur()">
+  </div>
+   <div class="col-sm-12">
+    <span ng-show="validation.wrongDec">You have entered invalid Decimal value.</span>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div class="col-sm-4">
+  <div class="col-sm-12" style="min-height:250px;">
+    <span class="prev_color" ng-style="{'background-color': colors.preview}"></span>
+    <span class="prev_image"></span>
+  </div>
+  <div class="col-sm-12" style="min-height:250px;">
+    <span class="info" ng-if="colors.opacity">Opacity: {{colors.opacity}}%</span>
+  </div>
+</div>
