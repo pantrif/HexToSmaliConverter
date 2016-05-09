@@ -8,8 +8,15 @@ Definition of Smali from the official page
 ## Usage
 ### Setup
 Clone the repo: `https://github.com/pantrif/HexToSmaliConverter.git`.
+Put the files in a server.
+
+## Contributing
+Please make a Pull request if you want to make a contribution.
 
 
+## Inspiration
+
+-= sk0t =- * http://forum.xda-developers.com/showpost.php?p=19343923&postcount=3
 
 ## License
 
