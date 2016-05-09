@@ -1,0 +1,30 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+.delete {
+  color:  red;
+  cursor: pointer;
+}
+
+.prev_image {
+    background-image: url("../images/transparent.png");
+    height: 200px;
+    width: 90%;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+.prev_color {
+    width: 90%;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border: 1px solid black;
+}
